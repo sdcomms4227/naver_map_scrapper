@@ -31,12 +31,6 @@ cd naver-map-scrapper
 npm install
 ```
 
-3. 환경 변수 설정
-```bash
-cp .env.example .env
-# .env 파일을 열어 필요한 설정 입력
-```
-
 ### 실행 방법
 
 1. 서버 시작
@@ -96,6 +90,10 @@ http://localhost:3000
 ### 검색이 시작되지 않는 경우
 - 검색어가 올바르게 입력되었는지 확인
 - 브라우저를 새로고침한 후 다시 시도
+- Chrome 브라우저와 ChromeDriver 버전이 일치하는지 확인
+  - Chrome 버전 확인: Chrome 브라우저 > 설정 > Chrome 정보
+  - ChromeDriver 버전은 Chrome 브라우저 버전과 동일해야 합니다
+  - 현재 프로젝트의 ChromeDriver 버전과 다르다면 [ChromeDriver 다운로드](https://chromedriver.chromium.org/downloads)에서 맞는 버전을 다운로드하여 교체해주세요
 
 ### 검색 중 오류가 발생하는 경우
 - 중지 버튼을 눌러 현재 검색을 중단
